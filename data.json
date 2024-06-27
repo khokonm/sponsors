@@ -1,0 +1,46 @@
+{
+    "sponsors": [
+        {
+            "name": "ReadAway",
+            "logo": "readaway.png",
+            "banner": "readaway-banner.png",
+            "slogan": "Your distraction-free reading companion",
+            "url": "https://readaway.app?utm_source=weblock"
+        }
+    ],
+    "backers": [
+        {
+            "name": "Blog Desire",
+            "logo": "blogdesire.png",
+            "url": "https://blogdesire.com?utm_source=weblock"
+        },
+        {
+            "name": "Blog Desire",
+            "logo": "blogdesire.png",
+            "url": "https://blogdesire.com?utm_source=weblock"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Eman"
+        },
+        {
+            "name": "Patrick H"
+        },
+        {
+            "name": "chaitanya"
+        },
+        {
+            "name": "Gaurab"
+        },
+        {
+            "name": "Winson"
+        },
+        {
+            "name": "Brendon"
+        },
+        {
+            "name": "Luis Reginaldo"
+        }
+    ]
+}

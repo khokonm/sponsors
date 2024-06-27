@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors and Backers for Khokon M.</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="header">
+            <h2>Sponsors</h2>
+        </div>
+        <div class="content">
+            Support Web Lock extension by becoming a sponsor! Each month, three sponsors will be featured on our extension. Subscribe to our Buy Me a Coffee page to become a sponsor.
+        </div>
+        <div class="sponsors sponsors">
+            
+        </div>
+        <a class="cta" href="https://buymeacoffee.com/khokon" target="_blank">
+            Become a Sponsor
+        </a>
+        <div class="header" style="margin-top: 40px;">
+            <h2>Backers</h2>
+        </div>
+        <div class="content">
+            Thank you to our amazing backers for your support! Your contributions help us keep enhancing Web Lock.
+        </div>
+        <div class="sponsors backers">
+            
+
+        </div>
+        <a class="cta" href="https://buymeacoffee.com/khokon" target="_blank">
+            Become a Backer
+        </a>
+        <div class="header" style="margin-top: 40px;">
+            <h2>Contributors</h2>
+        </div>
+        <div class="content">Thank you to our dedicated contributors! Your efforts make Web Lock better every day.</div>
+        <div class="sponsors contributors">
+        </div>
+        <a class="cta" href="https://buymeacoffee.com/khokon" target="_blank">
+            Become a Contributor
+        </a>
+    </div>
+    <script>
+        (async() => {
+            const sponsors = document.querySelector(".sponsors.sponsors");
+            const backers = document.querySelector(".sponsors.backers");
+            const contributors = document.querySelector(".sponsors.contributors");
+            const json = await fetch("./data.json");
+            const data = await json.json();
+            sponsors.innerHTML = "";
+            backers.innerHTML = "";
+            contributors.innerHTML = "";
+            data.sponsors.forEach(sponsor => {
+                sponsors.innerHTML += `
+                <a class="sponsor" href="${sponsor.url}" target="_blank">
+                    <img src="./logos/${sponsor.logo}" alt="Web Lock Sponsor" class="logo">
+                    <h4 class="title">${sponsor.name}</h4>
+                    <p class="tagline">
+                        ${sponsor.slogan}
+                    </p>
+                </a>
+                `;
+            });
+            data.backers.forEach(sponsor => {
+                backers.innerHTML += `
+                <a class="backer" href="${sponsor.url}" target="_blank">
+                    <img src="./logos/${sponsor.logo}" alt="Web Lock Sponsor" class="logo">
+                </a>
+                `;
+            });
+            data.contributors.forEach(sponsor => {
+                contributors.innerHTML += `
+                <div class="backer contributor">
+                    ${sponsor.name}
+                </div>
+                `;
+            });
+        })();
+    </script>
+</body>
+</html>
