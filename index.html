@@ -48,7 +48,7 @@
             const sponsors = document.querySelector(".sponsors.sponsors");
             const backers = document.querySelector(".sponsors.backers");
             const contributors = document.querySelector(".sponsors.contributors");
-            const json = await fetch("./data.json");
+            const json = await fetch("https://khokonm.github.io/sponsors/data.json");
             const data = await json.json();
             sponsors.innerHTML = "";
             backers.innerHTML = "";

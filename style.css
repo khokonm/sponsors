@@ -143,6 +143,39 @@ body {
     background-color: #ff4b4b;
 }
 
+/* Reset default list styles */
+.policies {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Style headings */
+.policies h3 {
+    margin-top: 10px; /* Adjust as needed */
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.policies ol{
+    margin-bottom: 40px;
+}
+/* Style policy points */
+.policies li {
+    margin-bottom: 8px; /* Adjust as needed */
+    line-height: 1.5;
+}
+
+/* Bold policy titles */
+.policies strong {
+    font-weight: bold;
+}
+
+/* Optional: Add margin or padding to the wrapper if needed */
+.content-wrapper {
+    padding: 20px;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 600px) {
     /* .sponsors {
